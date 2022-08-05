@@ -12,7 +12,7 @@ body {
 }
 
 h1 {
-  font-size: 32px;
+  font-size: 34px;
   font-weight: 700;
 }
 
@@ -55,15 +55,31 @@ a {
 
 .logo-details,
 .socials {
-  margin: 20px 40px;
+  margin: 20px 50px;
 }
 
 .socials i {
+  /* to make the width of all icons same */
+  width: 20px;
   margin: 0 7px;
-  padding: 10px;
-  border-radius: 20px;
-  font-size: 20px;
+  padding: 12px;
+  border-radius: 21px;
+  font-size: 18px;
+  text-align: center;
   color: #ffffff;
+}
+
+.socials i:hover {
+  animation: zoom 200ms ease 1 forwards;
+}
+
+@keyframes zoom {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.15);
+  }
 }
 
 .fa-facebook-f {
@@ -95,7 +111,7 @@ a {
 }
 
 .content > div {
-  margin: 30px 40px;
+  margin: 30px 50px;
 }
 
 .content h2::after {
@@ -114,8 +130,8 @@ input,
 button {
   padding: 12px 20px;
   font-size: 18px;
-  font-family: "Montserrat";
   font-weight: 600;
+  font-family: "Montserrat";
 }
 
 input {
@@ -135,9 +151,11 @@ button {
   border: none;
   border-radius: 3px;
   background-color: #e6e1e1;
+  transition: box-shadow 200ms ease;
 }
 
 button:hover {
+  box-shadow: 0 0 30px 40px #c6c4c4 inset;
   cursor: pointer;
 }
 
@@ -151,7 +169,7 @@ footer {
 }
 
 footer > p {
-  margin: 22px 40px;
+  margin: 22px 50px;
 }
 
 footer a {

@@ -1,1 +1,84 @@
 @import url("https://fonts.googleapis.com/css2?family=Sansita+Swashed:wght@600&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+}
+
+body {
+  height: 100vh;
+  background: linear-gradient(to right top, #2ae669 15%, #6b5ee1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.center {
+  height: 65vh;
+  width: 25vw;
+  border-radius: 15px;
+  background-color: #ffffff;
+}
+
+.center .header {
+  margin: 35px 40px;
+}
+
+.center h1 {
+  font-family: "Sansita Swashed";
+  font-size: 35px;
+}
+
+.center h1::before {
+  content: "";
+  display: inline-block;
+  width: 5px;
+  height: 70px;
+  border-radius: 5px;
+  background-color: #1b98f5;
+  position: relative;
+  left: -12px;
+  top: 23px;
+}
+
+.center form {
+  margin: 30px 30px;
+}
+
+form span {
+  display: none;
+}
+
+form input {
+  padding: 10px 15px;
+  margin: 22px 0;
+  font-size: 18px;
+  font-family: Arial;
+}
+
+input[type="text"] {
+  width: 85%;
+  color: #1b1b1b;
+  border: 2px solid #1b1b1b;
+  border-radius: 12px;
+}
+
+::placeholder {
+  color: #1b1b1b;
+}
+
+input[type="button"] {
+  width: 40%;
+  color: #ffffff;
+  font-weight: 600;
+  border: none;
+  border-radius: 12px;
+  background-color: #1b98f5;
+  transition: box-shadow 300ms ease-in-out;
+}
+
+input[type="button"]:hover {
+  box-shadow: 0 0 30px 30px #1faa59 inset;
+  cursor: pointer;
+}
