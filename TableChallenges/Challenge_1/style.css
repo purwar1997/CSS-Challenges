@@ -1,5 +1,66 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap");
+
 * {
+  margin: 0;
+  padding: 0;
+  outline: 0;
   font-family: "poppins", "verdana";
   box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  background: url(https://c1.wallpaperflare.com/preview/277/103/602/dark-foliage-tree-leaf.jpg);
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #fff;
+}
+
+.container {
+  width: 100%;
+  height: 100%;
+}
+
+h1 {
+  font-size: 40px;
+  text-align: center;
+  padding-top: 50px;
+}
+
+h2,
+h3 {
+  font-size: 22px;
+  text-align: center;
+  padding: 10px 0;
+}
+
+.yo > p {
+  font-size: 18px;
+  padding: 10px 20%;
+}
+
+.yo input,
+.yo select {
+  width: 18vw;
+  border: none;
+  border-radius: 20px;
+  margin-left: 10px;
+  padding: 7px 20px;
+  font-size: 15px;
+}
+
+.yo > button {
+  margin: 15px 20%;
+  padding: 10px 0;
+  width: 30vw;
+  background-color: #207398;
+  border-radius: 30px;
+  font-size: 20px;
+  transition: box-shadow 250ms ease;
+}
+
+.yo > button:hover {
+  cursor: pointer;
+  box-shadow: 0 0 30px 30px #1a5d7c inset;
 }
