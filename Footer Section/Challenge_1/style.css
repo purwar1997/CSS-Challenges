@@ -1,89 +1,61 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap");
 
 * {
   margin: 0;
   padding: 0;
   outline: 0;
-}
-
-body {
   font-family: "Montserrat";
-  color: #1b1b1b;
-}
-
-h2 {
-  font-size: 38px;
-  font-weight: 900;
-}
-
-.super {
-  vertical-align: super;
-  font-size: 28px;
-}
-
-h4 {
-  font-size: 25px;
-  font-weight: 700;
-  margin: 20px 0;
-}
-
-h4.mobile,
-h4.mail {
-  margin-bottom: 6px;
-}
-
-p {
-  font-size: 18px;
-  font-weight: 400;
-  margin: 8px 0;
-}
-
-a {
-  color: #1b1b1b;
-  text-decoration: none;
+  color: #000;
 }
 
 .footer {
   position: absolute;
   left: 0;
   bottom: 0;
-  height: 70vh;
   width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: stretch;
 }
 
 .heading {
-  flex-grow: 1;
-  padding: 10px 80px;
+  margin-bottom: 20px;
+  margin-left: 80px;
+}
+
+h2 {
+  font-size: 32px;
+  font-weight: 800;
+}
+
+.super {
+  vertical-align: super;
+  font-size: 25px;
 }
 
 .content {
-  flex-grow: 4;
-  display: flex;
-  flex-direction: row;
-  align-items: stretch;
-  padding: 20px 0;
+  padding: 25px 0;
 }
 
-.services,
-.social-media,
-.links,
-.details {
-  flex-grow: 1;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: flex-start;
-  padding-left: 50px;
+.content > div {
+  display: inline-block;
+  vertical-align: top;
+  margin: 0px 80px;
 }
 
-footer {
-  flex-grow: 1;
+h4 {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 22px;
+}
+
+p {
+  font-weight: 500;
+  margin-bottom: 22px;
+}
+
+a {
+  text-decoration: none;
 }
 
 footer p {
   text-align: center;
-  margin: 25px 0;
+  margin: 30px 0;
 }

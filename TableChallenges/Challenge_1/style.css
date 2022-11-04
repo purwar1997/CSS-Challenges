@@ -10,34 +10,33 @@
 
 body {
   height: 100vh;
-  background: url(https://c1.wallpaperflare.com/preview/277/103/602/dark-foliage-tree-leaf.jpg);
-  background-position: 50% 50%;
+  background-image: url(https://c1.wallpaperflare.com/preview/277/103/602/dark-foliage-tree-leaf.jpg);
+  background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   color: #fff;
 }
 
-.container {
-  width: 100%;
-  height: 100%;
-}
-
 h1 {
   font-size: 40px;
   text-align: center;
-  padding-top: 50px;
+  padding-top: 40px;
 }
 
 h2,
 h3 {
-  font-size: 22px;
+  font-size: 20px;
   text-align: center;
-  padding: 10px 0;
+  margin-top: 20px;
+}
+
+h3 {
+  margin-bottom: 40px;
 }
 
 .yo > p {
   font-size: 18px;
-  padding: 10px 20%;
+  margin: 24px 20%;
 }
 
 .yo input,
@@ -50,17 +49,22 @@ h3 {
   font-size: 15px;
 }
 
+.yo select {
+  border-radius: 0px;
+  padding: 7px 10px;
+}
+
 .yo > button {
-  margin: 15px 20%;
-  padding: 10px 0;
+  margin: 10px 0px 0px 20%;
+  padding: 10px;
   width: 30vw;
-  background-color: #207398;
+  background-color: #609ea0;
   border-radius: 30px;
   font-size: 20px;
-  transition: box-shadow 250ms ease;
+  transition: opacity 250ms ease;
 }
 
 .yo > button:hover {
   cursor: pointer;
-  box-shadow: 0 0 30px 30px #1a5d7c inset;
+  opacity: 0.85;
 }

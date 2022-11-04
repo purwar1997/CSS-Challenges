@@ -1,35 +1,19 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap");
 
 * {
   margin: 0;
   padding: 0;
   outline: 0;
-}
-
-body {
   font-family: "Montserrat";
   color: #ffffff;
 }
 
-h1 {
-  font-size: 34px;
-  font-weight: 700;
-}
-
-h2 {
-  font-size: 22px;
-  font-weight: 700;
-  margin-bottom: 25px;
-}
-
-p {
-  font-size: 18px;
-  font-weight: 400;
-  margin: 10px 0;
+body {
+  height: 100vh;
+  background-color: #eeeceb;
 }
 
 a {
-  color: #e6e1e1;
   text-decoration: none;
 }
 
@@ -38,52 +22,40 @@ a {
   left: 0;
   bottom: 0;
   width: 100%;
-  height: 65vh;
-  background-color: #030d59;
-  display: flex;
-  flex-direction: column;
-  align-items: stretch;
+  background-color: #140a5c;
 }
 
 .top {
-  flex-grow: 1.5;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
+  padding: 25px 80px;
 }
 
-.logo-details,
+.top > div {
+  display: inline-block;
+}
+
+.logo-details h1 {
+  font-size: 32px;
+  font-weight: 500;
+}
+
 .socials {
-  margin: 20px 50px;
+  float: right;
 }
 
-.socials i {
-  /* to make the width of all icons same */
-  width: 20px;
-  margin: 0 7px;
-  padding: 12px;
-  border-radius: 21px;
-  font-size: 18px;
+.socials a {
+  margin-left: 15px;
+}
+
+.socials a i {
+  width: 17px;
+  font-size: 17px;
   text-align: center;
-  color: #ffffff;
-}
-
-.socials i:hover {
-  animation: zoom 200ms ease 1 forwards;
-}
-
-@keyframes zoom {
-  from {
-    transform: scale(1);
-  }
-  to {
-    transform: scale(1.15);
-  }
+  padding: 10px;
+  border-radius: 50%;
 }
 
 .fa-facebook-f {
-  background-color: #4267b2;
+  background-color: #3b5998;
 }
 
 .fa-twitter {
@@ -91,11 +63,11 @@ a {
 }
 
 .fa-instagram {
-  background-color: #fe4164;
+  background-color: #cd486b;
 }
 
 .fa-linkedin-in {
-  background-color: #0077b5;
+  background-color: #0072b1;
 }
 
 .fa-youtube {
@@ -103,75 +75,95 @@ a {
 }
 
 .content {
-  flex-grow: 4;
-  display: flex;
-  flex-direction: row;
-  align-items: flex-start;
-  justify-content: space-between;
+  padding: 30px 80px;
 }
 
 .content > div {
-  margin: 30px 50px;
+  display: inline-block;
+  vertical-align: top;
+  margin: 0px 65px;
+}
+
+.content > :first-child {
+  margin-left: 0px;
+}
+
+.content > :last-child {
+  margin-right: 0px;
+}
+
+.content h2 {
+  font-size: 18px;
+  font-weight: 500;
+  margin-bottom: 25px;
 }
 
 .content h2::after {
   content: "";
   display: block;
-  width: 50px;
-  height: 3px;
   background-color: #ffffff;
-  border-radius: 3px;
+  height: 2px;
+  width: 35px;
   position: relative;
-  left: 0px;
-  bottom: -3px;
+  top: 3px;
 }
 
-input,
-button {
-  padding: 12px 20px;
-  font-size: 18px;
-  font-weight: 600;
-  font-family: "Montserrat";
+.content p {
+  margin-bottom: 15px;
+  font-size: 15px;
 }
 
-input {
-  color: #e6e1e1;
-  border: 2px solid #e6e1e1;
-  border-radius: 3px;
-  background-color: #030d59;
+form input {
+  width: 240px;
+  padding: 10px 14px;
+  font-size: 15px;
+  font-weight: 500;
+  color: #d0cedf;
+  background-color: transparent;
+  border: 2px solid #d0cedf;
+  border-radius: 4px;
 }
 
 ::placeholder {
-  color: #e6e1e1;
+  color: #d0cedf;
 }
 
-button {
-  width: 100%;
-  color: #030d59;
+form button {
+  width: 270px;
+  background-color: #d0cedf;
+  color: #0f0844;
+  padding: 10px 15px;
+  font-size: 18px;
+  font-weight: 600;
   border: none;
-  border-radius: 3px;
-  background-color: #e6e1e1;
-  transition: box-shadow 200ms ease;
+  border-radius: 4px;
 }
 
-button:hover {
-  box-shadow: 0 0 30px 40px #c6c4c4 inset;
+form button:hover {
   cursor: pointer;
+  opacity: 0.9;
 }
 
 footer {
-  flex-grow: 1;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
-  background-color: #020835;
+  padding: 20px 80px;
+  background-color: #0f0844;
 }
 
 footer > p {
-  margin: 22px 50px;
+  display: inline-block;
+  font-size: 14px;
 }
 
-footer a {
-  margin-right: 12px;
+.copyright a {
+  color: #d0cedf;
+  margin-right: 8px;
+}
+
+.policy-terms {
+  float: right;
+}
+
+.policy-terms a {
+  color: #d0cedf;
+  margin-left: 10px;
 }

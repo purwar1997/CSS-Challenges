@@ -4,25 +4,20 @@
   margin: 0;
   padding: 0;
   outline: 0;
+  font-family: "Montserrat";
 }
 
 body {
-  background-color: #d4dfec;
-}
-
-.wrap {
-  width: 100%;
+  background-color: #dddddd;
 }
 
 .nav {
   width: 70%;
-  height: 70px;
-  background-color: #5a5fb8;
-  margin: 12vh auto;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
+  margin: 100px auto 0px auto;
+  background-color: #3d79d0;
+  text-align: center;
+  padding: 25px 0px;
+  position: relative;
 }
 
 .nav::before,
@@ -31,37 +26,33 @@ body {
   display: inline-block;
   width: 90px;
   height: 70px;
-  background-color: #484b94;
+  background-color: #1c53c0;
   z-index: -1;
 }
 
 .nav::before {
   clip-path: polygon(100% 0, 100% 100%, 0 100%, 40% 50%, 0 0);
-  position: relative;
-  top: 27px;
-  left: -85px;
+  position: absolute;
+  left: -65px;
 }
 
 .nav::after {
   clip-path: polygon(100% 0, 60% 50%, 100% 100%, 0 100%, 0 0);
-  position: relative;
-  top: 27px;
-  right: -85px;
+  position: absolute;
+  right: -65px;
 }
 
 .nav a {
   color: #fff;
-  font-size: 17px;
+  font-size: 16px;
   font-weight: 600;
-  font-family: "Montserrat";
   text-decoration: none;
   text-transform: uppercase;
   margin: 0 10px;
-  padding: 10px 20px;
-  border-radius: 20px;
-  transition: background-color 200ms ease;
+  padding: 12px 25px;
+  border-radius: 30px;
 }
 
 .nav a:hover {
-  background-color: #f99742;
+  background-color: #ffa500;
 }

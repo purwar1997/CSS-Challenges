@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap");
 
 * {
   margin: 0;
@@ -7,11 +7,11 @@
 }
 
 body {
-  background-color: #ebebeb;
   font-family: "Montserrat";
   font-size: 18px;
-  font-weight: 600;
+  font-weight: 500;
   color: #fff;
+  text-align: center;
 }
 
 ul {
@@ -27,39 +27,36 @@ a:hover {
 }
 
 .nav-menu {
-  width: 65%;
+  margin-top: 20px;
+  display: inline-block;
   border-radius: 2px;
-  background-color: #758283;
-  display: flex;
-  flex-direction: row;
-  margin: 20px auto;
+  background-color: #666666;
 }
 
 .nav-items {
-  flex-grow: 1;
+  display: inline-block;
+  width: 180px;
+  padding: 15px 0px;
   text-align: center;
-  padding: 12px 0;
   position: relative;
 }
 
 .nav-items:hover {
-  background-color: #fd8989;
-  cursor: pointer;
+  background-color: #ffc9af;
+}
+
+.nav-items > ul {
+  width: inherit;
+  background-color: #c8c8c8;
+  position: absolute;
+  top: 52px;
+}
+
+.nav-items > ul > li {
+  margin: 20px 0;
+  font-size: 17px;
 }
 
 .nav-items:hover > ul {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-around;
-  background-color: #a9adb0;
-  padding: 10px 25px;
-  position: absolute;
-  left: 0px;
-  top: 46px;
-  width: 100%;
-}
-
-.nav-items:hover > ul > li {
-  margin: 8px 0;
+  display: block;
 }
