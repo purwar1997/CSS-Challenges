@@ -1,0 +1,150 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  font-family: "Montserrat";
+  color: #313131;
+}
+
+body {
+  overflow: hidden;
+}
+
+a {
+  text-decoration: none;
+}
+
+h1 {
+  margin-top: 25px;
+  margin-bottom: 25px;
+  text-align: center;
+}
+
+h1 a {
+  font-size: 32px;
+  font-weight: 700;
+  color: #5469d4;
+}
+
+.formbg-outer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 35px;
+}
+
+.formbg {
+  width: 350px;
+  display: inline-block;
+  background-color: #fff;
+  box-shadow: 0px 3px 10px #c8c8c8;
+  padding: 40px;
+  border-radius: 4px;
+  z-index: 1;
+}
+
+.formbg-inner > span {
+  font-size: 19px;
+  font-weight: 600;
+}
+
+#stripe-login {
+  margin-top: 25px;
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+}
+
+#stripe-login label {
+  font-size: 14px;
+  font-weight: 600;
+}
+
+input[type="email"],
+input[type="password"] {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 12px;
+  font-size: 16px;
+  border-radius: 4px;
+  border: 1px solid #ddd;
+}
+
+input[type="submit"] {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 14px 10px;
+  font-size: 16px;
+  border-radius: 4px;
+  border: none;
+  background-color: #5469d4;
+  color: #fff;
+  font-weight: 600;
+  transition: opacity 250ms ease;
+}
+
+input[type="submit"]:hover {
+  cursor: pointer;
+  opacity: 0.85;
+}
+
+.field:nth-child(1),
+.field:nth-child(2) {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.grid--50-50 {
+  display: flex;
+  justify-content: space-between;
+}
+
+.reset-pass a {
+  font-size: 14px;
+  font-weight: 600;
+  color: #5469d4;
+}
+
+input[type="checkbox"] {
+  margin-right: 5px;
+  position: relative;
+  top: 1px;
+}
+
+.field:nth-child(5) {
+  text-align: center;
+}
+
+.ssolink {
+  font-size: 15px;
+  font-weight: 600;
+  color: #5469d4;
+}
+
+.footer-link {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 25px;
+}
+
+.footer-link span {
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.footer-link > span a {
+  color: #5469d4;
+}
+
+.listing {
+  display: flex;
+  gap: 20px;
+}
+
+.listing a {
+  color: #5a6479;
+}
